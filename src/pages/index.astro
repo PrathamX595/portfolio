@@ -2,21 +2,41 @@
 import BaseLayout from "../BaseLayout.astro"
 ---
 <BaseLayout pageTitle = "prtm">
-	<div class="h-full w-full flex flex-col justify-center items-center">
-			<div class="text-textWhite font-gothic mt-16 text-lg">
-				<div class="flex gap-3 text-textWhite mb-4">
-					Hi there I'm Pratham
-					<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" class="w-8"> 
-				</div>
-				<div class="flex flex-col gap-8 text-textWhite">
+	<div class="h-full w-full flex flex-col justify-center items-center ">
+			<div class="text-textWhite w-full font-gothic mt-16 text-lg">
+				<div class="flex flex-col gap-8 justify-center items-start text-textWhite" id="mother-container">
 					<p>
-						A sophomore at IIT (BHU) Varanasi by day, and a tech enthusiast 24/7. I live for DevOps wizardry, web dev experiments, building quirky Discord bots and crafting Python scripts with a twist ( who says code can't be fun ?). When I'm not tinkering with tech, you'll find me jamming to music, gaming like there's no tomorrow ,bingeing movies , or striking up a chat, I love connecting with awesome people.
+						A random internet dweler with a passion for development, DevOps, and scripting who lives on Coffee, Code and Chaos ʕノ•ᴥ•ʔノ ︵ ┻━┻
 					</p>
-					<p>
-						forget Instagram follow me on github instead. :D
-					</p>
+					<div id="cookie-holder" class="flex">
+						<p id="cookie" class=" hover:text-textYellow hover:cursor-pointer">
+							P.S. here, have a cookie ► 🍪
+						</p>
+					</div>
 				</div>
 			</div>
-		<hr class=" w-[75%] border-2 border-dashed border-textWhite my-32">
+		<hr class=" w-[75%] border-2 border-dashed border-textWhite my-28">
 	</div>
 </BaseLayout>
+
+<script>
+    let cookieCount = 0;
+    const maxCookies = 7;
+    const cookie = document.getElementById("cookie");
+    const container = document.getElementById("cookie-holder");
+    const superContainer = document.getElementById("mother-container");
+
+    cookie?.addEventListener("click", () => {
+        if (cookieCount < maxCookies) {
+            const p = document.createElement("p");
+            p.innerHTML = "🍪";
+            container?.appendChild(p);
+            cookieCount++;
+        } else if(cookieCount < maxCookies+1) {
+            const p = document.createElement("p");
+            p.innerHTML = " alright that's enough cookie for you :P";
+            superContainer?.appendChild(p);
+			cookieCount++;
+        }
+    });
+</script>
