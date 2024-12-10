@@ -4,27 +4,27 @@
 
 @font-face {
   font-family: 'ISOCPEUR';
-  src: url('/fonts/ISOCPEUR.woff2') format('woff2'),
-       url('/fonts/ISOCPEUR.woff') format('woff'),
-       url('/fonts/ISOCPEUR.ttf') format('truetype');
+  src: url('../fonts/ISOCPEUR.woff2') format('woff2'),
+       url('../fonts/ISOCPEUR.woff') format('woff'),
+       url('../fonts/ISOCPEUR.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gothic A1';
-  src: url('/fonts/GothicA1-Regular.woff2') format('woff2'),
-       url('/fonts/GothicA1-Regular.woff') format('woff'),
-       url('/fonts/GothicA1-Regular.ttf') format('truetype');
+  src: url('../fonts/GothicA1-Regular.woff2') format('woff2'),
+       url('../fonts/GothicA1-Regular.woff') format('woff'),
+       url('../fonts/GothicA1-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Pixelated Elegance';
-  src: url('/fonts/PixelatedEleganceRegular-ovyAA.woff2') format('woff2'),
-       url('/fonts/PixelatedEleganceRegular-ovyAA.woff') format('woff'),
-       url('/fonts/PixelatedEleganceRegular-ovyAA.ttf') format('truetype');
+  src: url('../fonts/PixelatedEleganceRegular-ovyAA.woff2') format('woff2'),
+       url('../fonts/PixelatedEleganceRegular-ovyAA.woff') format('woff'),
+       url('../fonts/PixelatedEleganceRegular-ovyAA.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
