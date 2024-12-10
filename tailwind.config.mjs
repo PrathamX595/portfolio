@@ -4,9 +4,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-        		pixel: ['Pixelated Elegance', 'sans-serif'],
-        		gothic: ['Gothic A1', 'sans-serif'],
-        		iso: ['ISOCPEUR', 'sans-serif'],
+        		pixel: ['pixel', 'sans-serif'],
+        		gothic: ['gothic', 'sans-serif'],
+        		iso: ['iso', 'sans-serif'],
       		},
 			colors: {
 				'bg-default': '#1A1A1A',
